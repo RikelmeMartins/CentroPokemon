@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/form-1.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="bg-container">
+        <header>
+            <h1> <span>LOOPIS</span> GAME LIST</h1>
+        </header>
+        <main class="game-list">
+            <form class="form-1">
+                <div id="cadastro">
+                    <h2>Cadastro</h2>
+                </div>
+                <div id="nome-filme" class="area-form">
+                    <label id="labelId" for="name">Nome</label>
+                    <br>
+                    <input type="text" name="nome" id="name" placeholder="Digite o nome do game...">
+                </div>
+                <div class="area-form">
+                    <label id="labelId" for="descricao" >Descrição</label>
+                    <br>
+                    <textarea id="Ldescricao" rows="4" cols="50"></textarea>
+                    <br>
+                </div>
+                <div class="area-form">
+					<h3 id="labelId" >Marcar como favorito</h3>
+					<div class="area-form" id="favoritar">
+						<select id="favorito" name="favorito">
+							<option value="Sim">Sim</option>
+							<option value="Não">Não</option>
+						</select>
+					</div>
+					<div class="btn">
+						<button id="saveButton">Salvar</button>
+					</div>
+				</div>
+            </form>
+            <div class="lista">
+                <div class="lista-header">
+                    <h2>Lista</h2>
+                    
+                </div>
+                <div>
+                    <p id="emptyListMessage">Não há jogos cadastrados</p> 
+                </div>
+                <div class="scroll" id="gameList">
+                    
+                   
+                </div>
+
+
+            </div>
+
+        </main>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

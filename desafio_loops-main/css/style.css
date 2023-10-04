@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+}
+:root{
+    --titulo-main:#FFFB62;
+    --bg-main:#FCFCFC;
+    --sem-jogos:rgba(0, 0, 0, 0.30);
+    --segundo-titulo: #4C5CFF;
+    --btn-color: #4181FF;
+    --btn-hover: #3876f1;
+    --game-lista: #3C4EFF;
+    --game-favorito: #10086A; 
+}
+body{
+    background-image: url("../img/Imagem-plano-de-fundo.png");
+    background-position: center;
+    background-size: cover;
+  
+
+    height: auto;
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto,100px;
+    height: 60px;
+}
+span{
+    color: var(--titulo-main);
+    text-align: center;
+    font-family:  'Inter', sans-serif;
+    font-size: 2.9rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+   
+}
+h1{
+    color: var(--bg-main);
+    font-family: Inter;
+    font-size: 2.9rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+@media only screen and (max-width:950px){
+    .game-list{
+        flex-direction: column;
+    }
+    
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+}

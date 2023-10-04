@@ -1,0 +1,311 @@
+
+.game-list{
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 0px;
+}
+.form-1,.lista{ /* adicionado css no forme e na lista*/
+    
+    background-color: var(--bg-main);
+    width: 27.5rem;
+    height: 33rem;
+    padding: 20px;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+#cadastro{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding-bottom: 12px;
+    
+}
+
+h2,label,h3{
+    color: var(--segundo-titulo);
+    font-family: 'Inter', sans-serif;
+}
+
+#labelId{
+    font-size: 1.3rem;
+}
+h2{
+   font-size: 1.5rem;
+   font-weight: 700;
+   
+}
+h3{
+   font-size: 15px;
+    padding-bottom: 5px;
+
+}
+label{
+    font-size: 15px;
+    font-weight: 700;   
+   
+}
+
+#name{
+    width: 400px;
+    height: 40px;
+    font-family: 'Inter', sans-serif;
+    border-radius: 4px;
+    font-size: 1.0rem;
+    font-weight: bold;
+    padding: 5px;
+    border: 1px solid #737171;
+}
+
+textarea{
+    height: 60px;
+    width: 180px;
+    font-size: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #737171;
+    margin-top: 4px;
+}
+#favoritar{
+    display: flex;
+    align-items: center;
+}
+#img-elipse1,#img-elipse2 {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+    background-color:#F2EDED;
+    border-radius: 50%;
+    cursor: pointer;
+  
+    
+}
+#sim,#nao{
+    font-family: 'Inter', sans-serif;
+    color: var(--segundo-titulo);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    position: relative;
+    margin-top: 5px;
+
+}
+button{
+    width: 200px;
+    height: 40px;
+    font-size: 1.3rem;
+    border-radius: 28px;
+    background-color: var(--btn-color);
+    border: 1px solid #737171;
+    color: var(--bg-main);
+    position: absolute;
+    cursor: pointer;
+   
+
+
+}
+button:hover{
+    background-color: var(--btn-hover);
+}
+
+.area-form{
+    padding-bottom: 10px;
+   
+}
+
+#Ldescricao {
+    min-width: 400px; 
+    min-height: 150px; 
+    font-size: 1.0rem;
+    resize: none; 
+   
+    font-weight: bold;
+}
+
+/* ----------------- lista de games ---------------*/
+.lista-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.scroll{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 400px;
+    height: 440px;
+    scrollbar-width:thin;
+    scrollbar-color: #333333 #999999;
+   
+    
+}
+/* Estilização da scrollbar */
+::-webkit-scrollbar {
+    width: 4px;
+
+  }
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+::-webkit-scrollbar-thumb {
+    background: #888; 
+} 
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+li{
+    list-style: none;
+}
+.jogo-container{
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+    padding: 5px;
+    height: 100px;
+   
+    background-color: var(--game-lista);
+    width: 390px;
+    margin-bottom: 3px;
+  
+    
+}
+
+.jogo-container-fav{
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+    padding: 5px;
+    height: 100px;
+   
+    background-color: var(--game-favorito);
+    width: 390px;
+    margin-bottom: 3px;
+  
+    
+}
+#joystick{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+}
+h4{
+    color: var(--bg-main);
+    font-family: 'Inter', sans-serif;
+    font-size: 1.4rem;
+
+}
+#action{
+    display: flex;
+    width: auto;
+    justify-content:end;
+    align-content: center;
+}
+
+
+#excluir,#estrela{
+    display: flex;
+    padding: 2px;
+    height: 30px;
+    justify-content: center;
+    cursor: pointer;
+   
+
+}
+#img-joystick{
+    height: 50px;
+    width: 50px;
+}
+#img-estrela{
+    height: 25px;
+    width: 25px;
+}
+#img-lixo{
+    height: 25px;
+    width: 25px;
+}
+.titulo{
+    word-wrap: break-word;
+    overflow: hidden;
+    width: auto;
+}
+
+
+
+#conteudo{
+    
+    display: flex;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+    
+    
+}
+ p{
+    color: #F2EDED;
+    word-wrap:break-word;
+    font-size: 1.0rem;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    width: 300px;
+
+}
+
+#area-descricao{
+    position: relative;
+
+    height: 40px;
+    width: 40px;
+
+}
+
+
+
+#gameTable {
+	background-color: blue;
+	width: 100%;
+	border-radius: 5px;
+	font-family: 'Inter', sans-serif;
+	color: #fff;
+}
+
+#nomeJogo {
+	font-weight: bold;
+}
+
+select {
+	width: 100%;
+	margin-bottom: 10px;
+	font-family: 'Inter', sans-serif;
+	border-radius: 4px;
+	font-size: .8rem;
+	font-weight: bold;
+	padding: 5px;
+	border: 1px solid #737171;
+}
+
+#emptyListMessage{
+    font-size: 1.3rem;
+    color: gray;
+}
